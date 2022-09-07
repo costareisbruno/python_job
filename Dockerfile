@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
 RUN apt install pip3
 RUN pip3 install psycopg2
