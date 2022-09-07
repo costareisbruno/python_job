@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt install pip3
+RUN apt-get update && apt-get install -y python3.6 python3-distutils python3-pip python3-apt
 RUN pip3 install psycopg2
 RUN mkdir app
 COPY replica.py app/replica.py
